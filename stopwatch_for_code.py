@@ -34,7 +34,7 @@ class Timing:
         self.timeming = sum(timeit.repeat(self.code_test, repeat=self.repeat)) / self.repeat
 
         # вывод результата
-        print(f'Среднее время выполнения кода при {self.repeat} запусках:{self.timeming:.5f}')
+        print(f'Среднее время выполнения кода при {self.repeat} запуске:{self.timeming:.5f}')
 
     # окончание работы контекстного менеджера
     def __exit__(self, exc_type, exc_val, exc_tb):
